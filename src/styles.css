@@ -1,0 +1,21 @@
+.ghost {
+  position: relative;
+  width: 140px;
+  background: #efefef;
+  border-radius: 4px;
+  overflow: hidden;
+  color: transparent;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.ghost:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+}
