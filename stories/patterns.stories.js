@@ -5,7 +5,7 @@ import Ghost from '../src';
 
 import './demo-styles.css';
 
-const stories = storiesOf('2: Multiple lines', module);
+const stories = storiesOf('Patterns', module);
 
 // Add knobs to stories
 stories.addDecorator(withKnobs);
@@ -17,7 +17,7 @@ const lengthOptions = {
   step: 1,
 };
 
-stories.add('Paragraph example', () => (
+stories.add('Some example', () => (
   <article>
     <p>
       <Ghost loading={boolean('Loading', true)} length={number('Length', 189, lengthOptions)}>
