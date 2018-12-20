@@ -4,12 +4,10 @@ import { buildWordString, buildClassName } from './utils';
 
 import './styles.css';
 
-const Ghost = ({ loading, lines, length, children, variate, ...props }) => (
+const Ghost = ({ loading, length, children, variate, ...props }) => (
   <span className={buildClassName(props)}>
     {loading ? (
-      [...Array(lines)].map((_, i) => (
-        <span className="ghost__line">{buildWordString(length, variate)}</span>
-      ))
+      <span className="ghost__line">{buildWordString(length, variate)}</span>
     ) : (
       <Fragment>{children}</Fragment>
     )}
@@ -18,7 +16,6 @@ const Ghost = ({ loading, lines, length, children, variate, ...props }) => (
 
 Ghost.defaultProps = {
   loading: true,
-  lines: 1,
   length: 15,
   fullWidth: false,
   variate: false,

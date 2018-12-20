@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 import Ghost from '../src';
 
-import './demo-styles.css';
+import './basic.css';
 
 const stories = storiesOf('Basic usage', module);
 
@@ -18,7 +18,7 @@ const lengthOptions = {
 };
 
 stories.add('Headline', () => (
-  <article>
+  <article className="article">
     <h1>
       <Ghost loading={boolean('Loading', true)}>Welcome to Valhalla!</Ghost>
     </h1>
@@ -26,7 +26,7 @@ stories.add('Headline', () => (
 ));
 
 stories.add('Paragraph', () => (
-  <article>
+  <article className="article">
     <p>
       <Ghost loading={boolean('Loading', true)} length={189}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor id voluptas asperiores
@@ -38,7 +38,7 @@ stories.add('Paragraph', () => (
 ));
 
 stories.add('Article', () => (
-  <article>
+  <article className="article">
     <header>
       <h1>
         <Ghost loading={boolean('Loading', true)}>Welcome to Valhalla!</Ghost>
@@ -65,7 +65,7 @@ stories.add('Article', () => (
 ));
 
 stories.add('Article (Custom props)', () => (
-  <article>
+  <article className="article">
     <header>
       <h1>
         <Ghost

@@ -1,0 +1,36 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards h1,
+.cards p {
+  margin: 0;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card__header h2 {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+}
+
+.card__body {
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.card__footer {
+  padding: 0 20px;
+  margin: 20px 0;
+}

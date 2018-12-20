@@ -8,16 +8,38 @@
 
 .ghost__line {
   position: relative;
-  /* background: rgba(0, 0, 0, 0.05); */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0) 19%,
-    rgba(0, 0, 0, 0.1) 20%,
-    rgba(0, 0, 0, 0.1) 80%,
-    rgba(0, 0, 0, 0) 81%
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0.1) 15%,
+    rgba(0, 0, 0, 0.1) 85%,
+    rgba(0, 0, 0, 0) 85%
   );
   overflow: hidden;
   color: transparent;
   flex-shrink: 0;
   user-select: none;
+  animation: opacity 1s linear infinite alternate both;
+}
+
+/**
+ * ----------------------------------------
+ * animations
+ * ----------------------------------------
+ */
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
