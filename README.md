@@ -2,6 +2,8 @@
 
 React component for seamless masking of async content.
 
+[DEMO](https://whatthefoo.github.io/ghostload/)
+
 [Illustration]
 
 ### Why Ghostload?
