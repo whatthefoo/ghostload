@@ -1,34 +1,34 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { buildWordString, buildClassName } from './utils';
 
 import './styles.css';
 
-const PreloaderComponent = ({ loading, length, children, ...props }) => (
-  <Fragment>
+const Ghost = ({ loading, lines, length, children, variate, ...props }) => (
+  <span className={buildClassName(props)}>
     {loading ? (
-      <span className="ghost">{'n'.repeat(length)}</span>
+      [...Array(lines)].map((_, i) => (
+        <span className="ghost__line">{buildWordString(length, variate)}</span>
+      ))
     ) : (
       <Fragment>{children}</Fragment>
     )}
-  </Fragment>
+  </span>
 );
 
-PreloaderComponent.defaultProps = {
+Ghost.defaultProps = {
   loading: true,
+  lines: 1,
   length: 15,
   fullWidth: false,
-  height: '',
-  width: '',
-  borderRadius: '',
+  variate: false,
 };
 
-PreloaderComponent.propTypes = {
+Ghost.propTypes = {
   length: PropTypes.number,
   loading: PropTypes.bool,
   fullWidth: PropTypes.bool,
-  height: PropTypes.string,
-  width: PropTypes.string,
-  borderRadius: PropTypes.string,
+  variate: PropTypes.bool,
 };
 
-export default PreloaderComponent;
+export default Ghost;

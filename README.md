@@ -1,10 +1,18 @@
 ## Ghostload (WIP)
 
-React component for async content masking.
+React component for seamless masking of async content.
+
+[Illustration]
 
 ### Why Ghostload?
 
-Ghostload will match the exact line-height/font-size of the content it's masking. This prevents flicker when the data arrives.
+Ghostload exists because I wanted the loading placeholders and the actual contents to match as closely as possible. I couldn't find any other libraries that focused on this aspect.
+
+Example:
+
+[Animation]
+
+Ghostload, by default, will match the exact line-height/font-size of the content it's masking. This prevents flicker and page jumping when the data arrives.
 
 ### Installation
 
@@ -16,11 +24,13 @@ Ghostload will match the exact line-height/font-size of the content it's masking
 
 ```
 <h1>
-  <Ghost loaded={isLoaded} length={10}>
+  <Ghost loaded={isLoaded}>
     {asyncText}
   </Ghost>
 </h1>
 ```
+
+### Variants
 
 ### Props
 
