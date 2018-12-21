@@ -1,10 +1,12 @@
 ## Ghostload (WIP)
 
+No depe3.5KB gzipped
+
 React component for seamless masking of async content.
 
 [DEMO](https://whatthefoo.github.io/ghostload/)
 
-[Illustration]
+![Demo ](https://raw.githubusercontent.com/whatthefoo/ghostload/master/example.png)
 
 ### Why Ghostload?
 
@@ -12,7 +14,7 @@ Ghostload exists because I wanted the loading placeholders and the actual conten
 
 Example:
 
-[Animation]
+![Example ](https://raw.githubusercontent.com/whatthefoo/ghostload/master/demo.gif)
 
 Ghostload, by default, will match the exact line-height/font-size of the content it's masking. This prevents flicker and page jumping when the data arrives.
 
@@ -38,5 +40,5 @@ Ghostload, by default, will match the exact line-height/font-size of the content
 
 | _Prop_ |            _Description_            | _Default value_ |
 | ------ | :---------------------------------: | :-------------: |
-| loaded |        Sets background color        |      false      |
-| length | Estimated length of actual contents |       10        |
+| loaded |         mask/show contents          |      true       |
+| length | Estimated length of actual contents |       15        |
