@@ -14,7 +14,7 @@ Ghostload exists because I wanted the loading placeholders and the actual conten
 
 Example:
 
-![Example ](https://raw.githubusercontent.com/whatthefoo/ghostload/master/demo.gif)
+![Example ](https://raw.githubusercontent.com/whatthefoo/ghostload/master/example.gif)
 
 Ghostload, by default, will match the exact line-height/font-size of the content it's masking. This prevents flicker and page jumping when the data arrives.
 
