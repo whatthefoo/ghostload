@@ -1,12 +1,12 @@
-## Ghostload (WIP)
+## Ghostload
 
 3.5KB gzipped
 
 React component for seamless masking of async content.
 
-[DEMO](https://whatthefoo.github.io/ghostload/)
-
 ![Demo ](https://raw.githubusercontent.com/whatthefoo/ghostload/master/example.png)
+
+[DEMO](https://whatthefoo.github.io/ghostload/)
 
 ### Why Ghostload?
 
