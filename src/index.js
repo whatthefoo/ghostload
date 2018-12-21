@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { buildWordString, buildClassName } from './utils';
 
 import './styles.css';
@@ -19,13 +18,6 @@ Ghost.defaultProps = {
   length: 15,
   fullWidth: false,
   variate: false,
-};
-
-Ghost.propTypes = {
-  length: PropTypes.number,
-  loading: PropTypes.bool,
-  fullWidth: PropTypes.bool,
-  variate: PropTypes.bool,
 };
 
 export default Ghost;
