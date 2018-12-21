@@ -16,9 +16,7 @@ export function buildClassName(props) {
 }
 
 export function buildWordString(length = 15, variate = false) {
-  // The average length of English words is 4.5 letters
-  const TEXT =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ullam vero alias libero consequatur nulla quidem assumenda saepe, ducimus officiis reiciendis labore consequuntur iure minima dicta ipsum nesciunt. Recusandae, est.';
+  const TEXT = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '.repeat(10);
   const l = variate ? addVariation(length) : length;
 
   return TEXT.substr(0, l);
