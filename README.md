@@ -1,6 +1,6 @@
 ## Ghostload (WIP)
 
-No depe3.5KB gzipped
+3.5KB gzipped
 
 React component for seamless masking of async content.
 
