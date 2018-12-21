@@ -70,7 +70,7 @@ stories.add('Article (Custom props)', () => (
       <h1>
         <Ghost
           loading={boolean('Loading', true)}
-          length={number('Headline Length', 15, lengthOptions)}
+          length={number('Headline Length', 17, lengthOptions)}
         >
           Welcome to Valhalla!
         </Ghost>

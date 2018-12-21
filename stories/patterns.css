@@ -1,9 +1,10 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
 }
 
-.cards h1,
+.cards h2,
 .cards p {
   margin: 0;
 }
@@ -33,4 +34,49 @@
 .card__footer {
   padding: 0 20px;
   margin: 20px 0;
+}
+
+/* List example */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+.list h2,
+.list p {
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  max-width: 500px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.list-item__media {
+  display: block;
+  flex-shrink: 0;
+  width: 140px;
+  padding-bottom: 28%;
+  background-color: #e8e8e8;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-item__body {
+  padding: 10px 20px;
+}
+
+.list-item__title {
+  margin: 10px 0;
+}
+
+.list-item__description {
+  margin: 10px 0;
+}
+
+.list-item__meta {
+  margin: 20px 0 0 0;
 }

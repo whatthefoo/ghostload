@@ -43,11 +43,52 @@ stories.add('Cards', () => (
 
         <footer className="card__footer">
           <p>
-            <Ghost loading={boolean('Loading', true)} length={15}>
+            <Ghost loading={boolean('Loading', true)} length={12}>
               Lorem ipsum
             </Ghost>
           </p>
         </footer>
+      </article>
+    ))}
+  </section>
+));
+
+stories.add('List', () => (
+  <section className="list">
+    {[...Array(6)].map((_, i) => (
+      <article className="list-item" key={i}>
+        <div
+          className="list-item__media"
+          style={{
+            background: boolean('Loading', true)
+              ? ''
+              : "url('https://picsum.photos/140/140/?blur')",
+          }}
+        />
+        <div className="list-item__body">
+          <h2 className="list-item__title">
+            <Ghost loading={boolean('Loading', true)} length={9}>
+              Card Title
+            </Ghost>
+          </h2>
+          <div className="list-item__description">
+            <p>
+              <Ghost
+                loading={boolean('Loading', true)}
+                length={number('Description Length', 80, lengthOptions)}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor id voluptas.
+              </Ghost>
+            </p>
+          </div>
+          <div className="list-item__meta">
+            <p>
+              <Ghost loading={boolean('Loading', true)} length={12}>
+                Lorem ipsum
+              </Ghost>
+            </p>
+          </div>
+        </div>
       </article>
     ))}
   </section>
