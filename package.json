@@ -2,9 +2,6 @@
   "name": "ghost-load",
   "version": "1.0.2",
   "description": "Async content placeholder",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "main": "dist/index.js",
   "repository": {
     "type": "git",
